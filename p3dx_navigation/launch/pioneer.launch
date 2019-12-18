@@ -1,0 +1,39 @@
+<launch>
+
+<!-- Starting rosaria driver for motors and encoders -->
+  <!--node name="rosaria" pkg="rosaria" type="RosAria" args="_port:=/dev/ttyUSB0">
+  <remap from="rosaria/cmd_vel" to="cmd_vel"/>
+  <remap from="rosaria/pose" to="odom"/>
+  
+  </node-->
+<node pkg="rosaria" type="RosAria" name="RosAria"> 
+     <!--remap from="RosAria/cmd_vel" to="cmd_vel"/-->
+     <remap from="/RosAria/cmd_vel" to="/yocs_cmd_vel_mux/output/cmd_vel" />
+     <remap from="RosAria/pose" to="odom"/>
+     <param name="port" value="/dev/ttyUSB0" />
+     <param name="DriftFactor" value="30"/>
+     <param name="TicksMM" value="63"/>
+     <param name="RevCount" value="16570"/>
+  </node>
+
+
+<include file="$(find p2os_urdf)/launch/pioneer3dx_urdf.launch"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen" />
+
+  <!--include file="$(find urg_node)/launch/urg_lidar.launch"/-->	
+
+<!-- Starting laser rosrun sicktoolbox_wrapper sicklms -->
+
+  
+<!-- Starting laser tf -->
+ <!--node name="RosAriaLaserTf" pkg="p3dx_navigation" type="RosAriaLaserTf.py" /--> 
+
+
+<node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.15 0.0 0.18 0 0 0 base_link laser 100" />  
+ 
+
+<!--node name="odom_tf" pkg="p3dx_navigation" type="odom_tf" /-->
+ 
+
+</launch>

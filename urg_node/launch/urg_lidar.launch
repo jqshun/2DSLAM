@@ -1,0 +1,17 @@
+<launch>
+  
+  <node name="urg_node" pkg="urg_node" type="urg_node" output="screen">
+    <param name="frame_id" value="map"/>
+    <param name="ip_address" value=""/>
+    <param name="serial_port" value="/dev/ttyACM1"/>
+    <param name="serial_baud" value="115200"/>
+    <param name="frame_id" value="laser"/>
+    <param name="calibrate_time" value="true"/>
+    <param name="publish_intensity" value="false"/>
+    <param name="publish_multiecho" value="false"/>
+    <param name="angle_min" value="-1.5707963"/> 
+    <param name="angle_max" value="1.5707963"/>
+    <remap from="/scan" to ="/scan1"/>
+  </node>
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser2" args="0.15 0.0 0.18 0 0 0 base_link laser 10" />
+</launch>

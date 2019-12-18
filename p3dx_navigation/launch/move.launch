@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch">
+            <rosparam file="/home/jqshun/catkin_ws/src/velodyne/VLP16.yaml" command="load" />
+    </include>
+
+    <include file="$(find urg_node)/launch/urg_lidar.launch"/>
+
+    <include file="$(find autolabor_description)/launch/display_autolabor_pro1.launch"/>
+
+
+    <!-- Movebase -->
+    <include file="$(find p3dx_navigation)/launch/move_base_rosaria.launch"/>
+
+    <!--Gmapping -->
+    <!--include file="$(find car)/launch/gmapping_test.launch"/-->
+</launch>  

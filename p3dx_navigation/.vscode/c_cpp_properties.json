@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/jqshun/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/amcl/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/base_local_planner/include/**",
+                "/home/jqshun/catkin_ws/src/beginner_tutorials/include/**",
+                "/home/jqshun/catkin_ws/src/car/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/carrot_planner/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/clear_costmap_recovery/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/**",
+                "/home/jqshun/catkin_ws/src/cv3_bridge/include/**",
+                "/home/jqshun/catkin_ws/src/darknet_ros/darknet_ros/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/dwa_local_planner/include/**",
+                "/home/jqshun/catkin_ws/src/ORK/ecto/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/global_planner/include/**",
+                "/home/jqshun/catkin_ws/src/laser_proc/include/**",
+                "/home/jqshun/catkin_ws/src/loam_velodyne/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/map_server/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/move_base/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/move_slow_and_clear/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/nav_core/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/navfn/include/**",
+                "/home/jqshun/catkin_ws/src/random_numbers/include/**",
+                "/home/jqshun/catkin_ws/src/realsense-ros/realsense2_camera/include/**",
+                "/home/jqshun/catkin_ws/src/rf2o_laser_odometry/include/**",
+                "/home/jqshun/catkin_ws/src/robot_localization-melodic-devel/include/**",
+                "/home/jqshun/catkin_ws/src/robot_setup_tf/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/rotate_recovery/include/**",
+                "/home/jqshun/catkin_ws/src/urg_node/include/**",
+                "/home/jqshun/catkin_ws/src/usb_cam/include/**",
+                "/home/jqshun/catkin_ws/src/navigation-melodic-devel/voxel_grid/include/**",
+                "/home/jqshun/catkin_ws/src/yocs_cmd_vel_mux/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
