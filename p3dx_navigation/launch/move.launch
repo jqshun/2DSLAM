@@ -13,4 +13,6 @@
 
     <!--Gmapping -->
     <!--include file="$(find car)/launch/gmapping_test.launch"/-->
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find p3dx_navigation)/rviz/default.rviz" />
 </launch>  

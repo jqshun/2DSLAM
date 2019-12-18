@@ -1,5 +1,10 @@
 How to Connect
-===
+# **First Step**
+
+Make sure, wired connection to PEV, wireless connection to lab314_pev
+
+sudo apt-get install ros-melodic-navigation
+
 **Jetson Nano**
 
 ```xml
@@ -44,8 +49,6 @@ export ROS_IP=192.168.3.3                             (self-ip)
 
 ```xml
 roslaunch p3dx_navigation move.launch 
-	
-rviz	
 ```
 
 # **To save map for gmapping**
