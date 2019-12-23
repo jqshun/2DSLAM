@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/jqshun/shun_ws3/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/car/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/find_moving_objects/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/laser_proc/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/realsense-ros/realsense2_camera/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/urg_node/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/velodyne/velodyne_driver/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/velodyne/velodyne_laserscan/include/**",
+        "/home/jqshun/shun_ws3/src/PJCH/velodyne/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

@@ -10,6 +10,8 @@ Mapping and Navigation
 
 # **launch**
 > move_base_rosaria.launch
+优先权控制：
+参考网页: https://www.cnblogs.com/21207-iHome/p/8228356.html
 
 ```xml
 <remap from="/cmd_vel" to="/yocs_cmd_vel_mux/input/navigation" />
@@ -35,6 +37,10 @@ If move_base, uncomment move_base, comment gmapping.
 > costmap_common_params.yaml
 
 	Can be pointcloud instead of laser
+	Footprint 是车子的身形，目前是轮子到轮子的距离，形成一个四方形，可是建议根据车子的铁框形状设置。
+	Observation source: 可以是Pointcloud2 3D, 也可以是laser_scan_sensor 2D
+	目前有两个laser sensor, hokuyo(/scan1) 和 Velodyne(/scan) 所以为了local 避障读取hokuyo的/scan1
+	参考网页: https://www.twblogs.net/a/5c7c1960bd9eee339918c427
 
 ```xml
 footprint: [[0.175, 0.15], [0.175, -0.15], [-0.175, -0.15], [-0.175, 0.15]]
@@ -46,6 +52,7 @@ aser_scan_sensor: {sensor_frame: laser, topic: /scan1, data_type: LaserScan, cle
 > global_costmap/local_costmap params.yaml
 
 	set inflation radius
+	Inflation radius 是对障碍物膨胀/安全距离，这个参数需要根据车子的速度来设置，速度越快，安全距离应该越大。
 
 
 > move_base_params:

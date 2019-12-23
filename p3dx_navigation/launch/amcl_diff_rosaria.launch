@@ -9,8 +9,8 @@
             <param name="update_min_a" value="0.05" />
             <param name="resample_interval" value="2" />
             <param name="transform_tolerance" value="0.5" />
-            <param name="recovery_alpha_slow" value="0.001" />
-            <param name="recovery_alpha_fast" value="0.1" />
+            <param name="recovery_alpha_slow" value="0" />
+            <param name="recovery_alpha_fast" value="0" />
             <param name="laser_max_beams" value="50" />
             <param name="laser_z_hit" value="0.85" />
             <param name="laser_z_rand" value="0.15" />
