@@ -10,7 +10,9 @@ Mapping and Navigation
 
 # **launch**
 > move_base_rosaria.launch
+
 优先权控制：
+
 参考网页: https://www.cnblogs.com/21207-iHome/p/8228356.html
 
 ```xml
