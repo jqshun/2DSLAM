@@ -38,11 +38,16 @@ If move_base, uncomment move_base, comment gmapping.
 
 > costmap_common_params.yaml
 
-	Can be pointcloud instead of laser
-	Footprint 是车子的身形，目前是轮子到轮子的距离，形成一个四方形，可是建议根据车子的铁框形状设置。
-	Observation source: 可以是Pointcloud2 3D, 也可以是laser_scan_sensor 2D
-	目前有两个laser sensor, hokuyo(/scan1) 和 Velodyne(/scan) 所以为了local 避障读取hokuyo的/scan1
-	参考网页: https://www.twblogs.net/a/5c7c1960bd9eee339918c427
+	
+Can be pointcloud instead of laser
+	
+Footprint 是车子的身形，目前是轮子到轮子的距离，形成一个四方形，可是建议根据车子的铁框形状设置。
+	
+Observation source: 可以是Pointcloud2 3D, 也可以是laser_scan_sensor 2D
+	
+目前有两个laser sensor, hokuyo(/scan1) 和 Velodyne(/scan) 所以为了local 避障读取hokuyo的/scan1
+	
+参考网页: https://www.twblogs.net/a/5c7c1960bd9eee339918c427
 
 ```xml
 footprint: [[0.175, 0.15], [0.175, -0.15], [-0.175, -0.15], [-0.175, 0.15]]
