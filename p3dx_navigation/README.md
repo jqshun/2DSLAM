@@ -52,7 +52,7 @@ Observation source: 可以是Pointcloud2 3D, 也可以是laser_scan_sensor 2D
 ```xml
 footprint: [[0.175, 0.15], [0.175, -0.15], [-0.175, -0.15], [-0.175, 0.15]]
 observation_sources: laser_scan_sensor
-aser_scan_sensor: {sensor_frame: laser, topic: /scan1, data_type: LaserScan, clearing: true, marking: true}
+laser_scan_sensor: {sensor_frame: laser, topic: /scan1, data_type: LaserScan, clearing: true, marking: true}
 ```
 
 
